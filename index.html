@@ -3,8 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kamao Roj - Earning App Demo</title>
+<title>Kamao Roj</title>
 <link rel="stylesheet" href="main.css">
+<style>
+.file-header, .file-photos, .file-caption, .file-closing,
+.file-group:not(:has(.kr-wrap)) { display: none !important; }
+.file-group:has(.kr-wrap) > .file-group-heading,
+.file-group:has(.kr-wrap) > .file-p { display: none !important; }
+.file-group:has(.kr-wrap) { margin: 0 !important; }
+main.file-card { padding-top: 10px !important; }
+</style>
 <script>
 window.instinctFile = {
   initialRoute: location.hash ? decodeURIComponent(location.hash.slice(1)) : '/',
